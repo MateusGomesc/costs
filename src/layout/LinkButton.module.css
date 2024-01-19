@@ -1,0 +1,12 @@
+.link{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--bg-secondary);
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.link:hover{
+    color: var(--icon-color);
+}

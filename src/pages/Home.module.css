@@ -1,0 +1,29 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5em 0;
+}
+
+.emphasis{
+    background-color: var(--bg-secondary);
+    color: var(--icon-color);
+    padding: 0 0.4em;
+    border-radius: 1em;
+}
+
+.title{
+    font-size: 2.5em;
+}
+
+.subtitle{
+    margin-bottom: 1em;
+    font-weight: lighter;
+}
+
+.image{
+    height: 400px;
+    width: 400px;
+}
