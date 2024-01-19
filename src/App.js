@@ -13,10 +13,10 @@ function App() {
         <Header/>
         <Container>
           <Routes>
-            <Route exact path="/" element={Home}></Route>
-            <Route path="/contact" element={Contact}></Route>
-            <Route path="/company" element={Company}></Route>
-            <Route path="/newprojects" element={NewProjects}></Route>
+            <Route exact path="/" element={<Home/>}></Route>
+            <Route exact path="/Contact" element={<Contact/>}></Route>
+            <Route exact path="/Company" element={<Company/>}></Route>
+            <Route exact path="/NewProjects" element={<NewProjects/>}></Route>
           </Routes>
         </Container>
       </Router>
