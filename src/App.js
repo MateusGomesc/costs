@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Company from "./pages/Company";
 import NewProjects from "./pages/NewProjects";
 import Header from "./layout/Header";
+import Footer from "./layout/Footer" 
 import Container from './layout/Container'
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
             <Route exact path="/NewProjects" element={<NewProjects/>}></Route>
           </Routes>
         </Container>
+        <Footer/>
       </Router>
     </div>
   );
