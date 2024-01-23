@@ -1,4 +1,4 @@
-import Savings from '../img/savings.svg'
+import Savings from '../../img/savings.svg'
 import LinkButton from '../layout/LinkButton'
 import styles from './Home.module.css'
 

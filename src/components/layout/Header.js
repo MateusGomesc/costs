@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Logo from '../img/costs_logo.png'
+import Logo from '../../img/costs_logo.png'
 import Container from './Container'
 import styles from "./Header.module.css"
 
@@ -18,7 +18,7 @@ function Header(){
                         <Link to='/Company'>Empresa</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to='/NewProjects'>Projetos</Link>
+                        <Link to='/Projects'>Projetos</Link>
                     </li>
                     <li className={styles.item}>
                         <Link to='/Contact'>Contatos</Link>

@@ -1,0 +1,22 @@
+.select{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    width: 38%;
+}
+
+.select label{
+    margin-bottom: .6em;
+    font-weight: bold;
+}
+
+.select select{
+    padding: .7em .9em;
+    border-radius: 0;
+    border: none;
+}
+
+.select select:focus{
+    outline: 0;
+}

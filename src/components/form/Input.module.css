@@ -1,0 +1,31 @@
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    width: 38%;
+}
+
+.input label{
+    margin-bottom: .6em;
+    font-weight: bold;
+}
+
+.input input{
+    padding: .7em .9em;
+    border-radius: 0;
+    border: none;
+}
+
+.input input::placeholder{
+    color: var(--grey);
+}
+
+.input input:focus{
+    outline: 0;
+}
+
+.input input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
