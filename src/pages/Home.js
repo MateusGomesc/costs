@@ -5,7 +5,7 @@ import styles from './Home.module.css'
 function Home(){
     return(
         <section className={styles.section}>
-            <h1 className={styles.title}>Bem Vindo ao <span className={styles.emphasis}>Costs!</span></h1>
+            <h1 className={styles.title}>Bem-vindo ao <span className={styles.emphasis}>Costs!</span></h1>
             <h3 className={styles.subtitle}>Gerencie seus projetos agora mesmo!</h3>
             <LinkButton 
                 to='/NewProjects' 
