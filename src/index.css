@@ -4,6 +4,12 @@
   --icon-color: #ffbb33;
   --white: #fff;
   --grey: #7b7b7b;
+  --sucess: #155724;
+  --bg-sucess: #d4edda;
+  --bd-sucess: #c3e6cb;
+  --error: #721c24;
+  --bg-error: #f8d7da;
+  --bd-error: #f5c6cb;
 }
 
 * {
