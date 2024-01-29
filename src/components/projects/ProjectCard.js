@@ -8,6 +8,11 @@ function ProjectCard({ id, name, budget, category, handleRemove }){
         return "R$ " + value.toFixed(2).replace(".", ",").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     }
 
+    const remove = (event) => {
+        event.preventDefault()
+        handleRemove(id)
+    }
+
     return(
         <div className={styles.projectCard}>
             <div>
@@ -23,7 +28,7 @@ function ProjectCard({ id, name, budget, category, handleRemove }){
                 <Link to='/'>
                     <BsPencil /> Editar
                 </Link>
-                <button>
+                <button onClick={remove}>
                     <BsFillTrashFill /> Excluir
                 </button>
             </div>
