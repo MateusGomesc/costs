@@ -10,6 +10,10 @@
   --error: #721c24;
   --bg-error: #f8d7da;
   --bd-error: #f5c6cb;
+  --infra: #ffaebc;
+  --dev: #a0e7e5;
+  --design: #b4f8c8;
+  --planer: #fbe7c6;
 }
 
 * {
