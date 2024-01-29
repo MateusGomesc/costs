@@ -4,15 +4,21 @@ import { Link } from 'react-router-dom'
 import styles from './ProjectCard.module.css'
 
 function ProjectCard({ id, name, budget, category, handleRemove }){
+    function formatPrice(value) {
+        return "R$ " + value.toFixed(2).replace(".", ",").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
     return(
         <div className={styles.projectCard}>
-            <h4>{name}</h4>
-            <p>
-                <span>Orçamento:</span> R${budget}
-            </p>
-            <p className={styles.categoryText}>
-                <span className={`${styles[category?.toLowerCase()]}`}></span> {category}
-            </p>
+            <div>
+                <h4>{name}</h4>
+                <p>
+                    <span>Orçamento:</span> {formatPrice(parseFloat(budget))}
+                </p>
+                <p className={styles.categoryText}>
+                    <span className={`${styles[category?.toLowerCase()]}`}></span> {category}
+                </p>
+            </div>
             <div className={styles.projectCardActions}>
                 <Link to='/'>
                     <BsPencil /> Editar
