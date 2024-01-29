@@ -7,9 +7,11 @@ import styles from './Project.module.css'
 import Container from '../layout/Container'
 import LinkButton from "../layout/LinkButton"
 import ProjectCard from "../projects/ProjectCard"
+import Loading from '../layout/Loading'
 
 function Projects(){
     const [projects, setProjects] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const location = useLocation()
     let message = ''
@@ -26,7 +28,10 @@ function Projects(){
             }
         })
             .then(response => response.json())
-            .then(data => setProjects(data))
+            .then(data => {
+                setProjects(data)
+                setLoading(false)
+            })
             .catch(error => console.log(error))
     }, [])
 
@@ -55,6 +60,8 @@ function Projects(){
                         key={project?.id}
                     />
                 ))}
+                {loading && <Loading/>}
+                {!loading && projects?.length === 0 && <p>Não foram encontrados projetos cadastrados!</p>}
             </Container>
         </div>
     )
