@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 
 import styles from './ProjectCard.module.css'
 
+export function formatPrice(value) {
+    return "R$ " + value.toFixed(2).replace(".", ",").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 function ProjectCard({ id, name, budget, category, handleRemove }){
-    function formatPrice(value) {
-        return "R$ " + value.toFixed(2).replace(".", ",").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    }
 
     const remove = (event) => {
         event.preventDefault()

@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom"
 import { useEffect, useState } from "react"
 
 import Message from "../layout/Message"
-import styles from './Project.module.css'
+import styles from './Projects.module.css'
 import Container from '../layout/Container'
 import LinkButton from "../layout/LinkButton"
 import ProjectCard from "../projects/ProjectCard"
@@ -68,7 +68,7 @@ function Projects(){
             )}
             {deleteMessage && (
                 <Message 
-                    type='error'
+                    type='sucess'
                     text={deleteMessage}
                 />
             )}
