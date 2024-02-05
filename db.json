@@ -1,28 +1,5 @@
 {
-  "projects": [
-    {
-      "id": "c3b8",
-      "name": "Website Corporativo",
-      "budget": "20000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "9462",
-      "name": "Contrução sala",
-      "budget": "100000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": []
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": "1",

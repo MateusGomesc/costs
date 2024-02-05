@@ -15,13 +15,7 @@ function Header(){
                         <Link to='/'>Home</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to='/Company'>Empresa</Link>
-                    </li>
-                    <li className={styles.item}>
                         <Link to='/Projects'>Projetos</Link>
-                    </li>
-                    <li className={styles.item}>
-                        <Link to='/Contact'>Contatos</Link>
                     </li>
                 </ul>
             </Container>
