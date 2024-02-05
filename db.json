@@ -8,21 +8,19 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 5010,
-      "services": [
-        {
-          "name": "Teste",
-          "cost": "10",
-          "description": "Algo",
-          "id": "114c95f1-f5d8-4a2b-a3aa-469307550214"
-        },
-        {
-          "name": "Contratar programador Sênior",
-          "cost": "5000",
-          "description": "Contratar profissional",
-          "id": "c80f94f6-fed7-4e13-bc77-3cc7cac9c8cd"
-        }
-      ]
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "9462",
+      "name": "Contrução sala",
+      "budget": "100000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
